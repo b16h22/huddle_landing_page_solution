@@ -1,0 +1,148 @@
+
+    * {
+      color: white;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      padding: 4% 5%;
+      background-color: hsl(257, 40%, 49%);
+      background-image: url(../images/bg-desktop.svg);
+      background-repeat: no-repeat;
+    }
+
+    .logo {
+      width: 200px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      max-width: 100%;
+      margin-top: 6.5%;
+    }
+
+    .mockup {
+      display: inline-block;
+      max-width: 55%;
+      object-fit: scale-down;
+    }
+
+    .content {
+      display: inline-block;
+      max-width: 45%;
+      align-items: center;
+      padding: 1.4% 1.4% 1.4% 4%;
+    }
+
+    .title {
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 2.3rem;
+    }
+
+    .desc {
+      font-family: Open Sans;
+      font-weight: 400;
+      line-height: 1.6rem;
+    }
+
+    .register {
+      font-family: Poppins;
+      font-size: 1rem;
+      width: 12rem;
+      border-radius: 2rem;
+      background-color: white;
+      color:hsl(257, 40%, 49%);
+      padding: 0.8rem;
+      margin: 0.8rem 0;
+      vertical-align: middle;
+      border: none;
+      box-shadow: 0 8px 8px hsla(256, 0%, 0%, 0.2);
+    }
+
+    .register:hover {
+      background-color: hsl(300, 69%, 71%);
+      color:white;
+    }
+
+    .footer {
+      float: right;
+      margin-bottom: 3%;
+    }
+
+    .fa-brands {
+      border-radius: 50%;
+      border: 2px solid white;
+      color: white;
+      font-size: 1rem;
+      margin: 0.5rem 0 0 0.5rem;
+      padding: 0.6rem;
+      height: 1rem;
+      width: 1rem;
+      text-align: center;
+    }
+
+    .fa-brands:hover {
+      color: hsl(300, 69%, 71%);
+      border: 2px solid hsl(300, 69%, 71%);
+    }
+
+    @media screen and (max-width:768px) {
+
+      body {
+        padding: 10%;
+        background-image: url(../images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+      } 
+
+      .container {
+        flex-direction: column;
+        max-width: 100%;
+        margin-top: 0;
+        padding-top: 16%;
+        padding-bottom: 16%;
+      }
+
+      .mockup {
+        max-width: 100%;
+      }
+
+      .content {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 12%;
+        padding: 0;
+      }
+
+      .logo {
+        width: 42%;
+      }
+
+      .title {
+        font-size: 2rem;
+      }
+
+      .desc {
+        font-size: 1.3rem;
+        line-height: 2rem;
+      }
+
+      .register {
+        width: 70%;
+      }
+
+      .footer {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+      }
+
+      .fa-brands {
+        margin: 0 0.3rem 0 0.3rem;
+      }
+      
+    }
